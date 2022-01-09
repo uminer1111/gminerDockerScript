@@ -4,9 +4,9 @@ You can find more information about Gminer on thier page  here: https://github.c
 
 The check4Updates.sh script pulls the new docker images if there is a new one available and continues mining ravencoin. This repository is specific for linux only and requires installation of Docker. 
 
-Docker can be installed using the command below:
+You can find docker installation instructions here: https://docs.docker.com/engine/install/ubuntu/
 
-sudo apt-get install docker.io
+IMPORTANT: follow the post installation steps for docker here: https://docs.docker.com/engine/install/linux-postinstall/
 
 You may also need to install nvidia docker if you have not already using this command:
 
@@ -36,4 +36,10 @@ Finally navigate to the folder where the check4Updates script is stored and make
 
 chmod +x check4Updates.sh
 
+
+If you wish to check the logs of your miners you can run the following command:
+
+docker logs ravenminer -f
+
+ravenminer is the name that you give to the docker container in check4Updates.sh
 
